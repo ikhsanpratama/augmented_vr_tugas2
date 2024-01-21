@@ -1,0 +1,11 @@
+Model Information:
+* title:	Animated camels
+* source:	https://sketchfab.com/3d-models/animated-camels-3fd17fb101fa4459a6bf4f598d6ac83a
+* author:	striderrotk (https://sketchfab.com/striderrotk)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Animated camels" (https://sketchfab.com/3d-models/animated-camels-3fd17fb101fa4459a6bf4f598d6ac83a) by striderrotk (https://sketchfab.com/striderrotk) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
