@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Augmented & Virtual Reality - Tugas 2 </title>
+    <meta name="description" content="A-Frame Environment Component">
+    <meta name="author" content="Ikhsan Pratama">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no,maximum-scale=1">    
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="assets/js/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>      
+    <script src="dist/aframe-environment-component.min.js"></script>           
+    <link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">    
+  </head>
+  <body>    
+    <a-scene cursor="rayOrigin:mouse" physics="debug:false; gravity:-9.8; restitution:0.7">
+        <a-camera id="camera" look-controls position="2 3 -70" wasd-controls-enabled="false"></a-camera>
+        <a-entity environment="preset: yavapai; skyType: gradient;skyColor: orange; playArea: 2;lighting : distant;lightPosition: 0 1 1" id="environment"></a-entity> 
+        <a-gltf-model src="assets/3d-models/building/scene.gltf" position="1.3 0.05 0" scale="0.01 0.01 0.01" rotation="0 0 0"></a-gltf-model>
+
+        <a-gltf-model src="assets/3d-models/car/scene.gltf" position="-1 0.3 -85" scale="0.01 0.01 0.01" rotation="0 0 0"></a-gltf-model>
+        <a-gltf-model src="assets/3d-models/car2/scene.gltf" position="5 0.3 -85" scale="0.025 0.025 0.025" rotation="0 0 0"></a-gltf-model>
+        <a-gltf-model src="assets/3d-models/car_group/scene.gltf" position="20 0.3 -60" scale="0.013 0.013 0.013" rotation="0 180 0"></a-gltf-model>
+        <a-gltf-model src="assets/3d-models/jeep/scene.gltf" position="-50 0.3 -74" scale="0.02 0.02 0.02" rotation="0 90 0" animation="property:position; to: 100 0.3 -74; dur: 5000; easing: linear; loop: true"></a-gltf-model>
+        
+
+        <a-gltf-model src="assets/3d-models/containers/scene.gltf" position="25 0.5 -35" scale="0.2 0.2 0.2" rotation="0 -180 0"></a-gltf-model>
+        <a-box body="type: dynamic; mass: 0; shape: box;" constraint="collideConnected: true;" position="20 14.5 -88" rotation="0 0 0" scale="10 30 13" src="assets/img/building.png"></a-box>
+        <a-gltf-model src="assets/3d-models/ancient_door/scene.gltf" position="-8 0 -60" scale="0.005 0.005 0.005" rotation="0 120 0" link="href: index.html;" animation-mixer></a-gltf-model>
+        <a-gltf-model src="assets/3d-models/man/scene.gltf" position="-6 0.2 -60" scale="2 2 2" rotation="0 150 0"  animation-mixer="clip: salute;"></a-gltf-model>
+        <a-plane body="type: static; mass: 0; shape: box;"  position="0 -0.01 -4" rotation="-90 0 0" width="100" height="100"  repeat="10 4"></a-plane>
+
+    </a-scene>
+  </body>
+</html>

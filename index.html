@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Augmented & Virtual Reality - Tugas 2 </title>
+    <meta name="description" content="A-Frame Environment Component">
+    <meta name="author" content="Ikhsan Pratama">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no,maximum-scale=1">    
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>    
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>      
+    <script src="dist/aframe-environment-component.min.js"></script>           
+    <link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
+    <script>
+      AFRAME.registerComponent('navigate-on-click', {
+          schema: {
+              url: { default: '' }
+          },
+
+          init: function () {
+              var data = this.data;
+              var el = this.el;
+
+              el.addEventListener('click', function () {
+                  window.location.href = data.url;
+              });
+          }
+      });        
+  </script>
+  </head>
+  <body>    
+    <a-scene cursor="rayOrigin:mouse">        
+          <a-entity environment="preset: arches" preset-switcher id="environment"></a-entity>        
+          <a-camera id="camera" look-controls position="0 1.6 0" wasd-controls-enabled="false"></a-camera>
+          <!-- Pintu-->
+          <a-gltf-model src="assets/3d-models/ancient_door/scene.gltf" position="-4 -0.001 -5" scale="0.0025 0.0025 0.0025" rotation="0 0 0" link="href: forest.html;"></a-gltf-model>
+          <a-gltf-model src="assets/3d-models/ancient_door/scene.gltf" position="-2 -0.001 -5" scale="0.0025 0.0025 0.0025" rotation="0 0 0" link="href: volcano.html;"></a-gltf-model>
+          <a-gltf-model src="assets/3d-models/ancient_door/scene.gltf" position="0 -0.001 -5" scale="0.0025 0.0025 0.0025" rotation="0 0 0" link="href: ancient.html;"></a-gltf-model>
+          <a-gltf-model src="assets/3d-models/ancient_door/scene.gltf" position="2 -0.001 -5" scale="0.0025 0.0025 0.0025" rotation="0 0 0" link="href: building.html;"></a-gltf-model>
+          <a-gltf-model src="assets/3d-models/ancient_door/scene.gltf" position="4 -0.001 -5" scale="0.0025 0.0025 0.0025" rotation="0 0 0" link="href: space.html;"></a-gltf-model>
+          <!-- <a-gltf-model src="assets/3d-models/pintu_merah/scene.gltf" position="0 -0.01 -5" scale="1 1 1" rotation="0 0 0" link="href: volcano.html;">
+            <a-text value="VOLCANO" position="-0.25 1.75 0.05" height="3" width="3" color="white"></a-text>
+          </a-gltf-model>
+          <a-gltf-model src="assets/3d-models/pintu_kuning/scene.gltf" position="2 -0.01 -5" scale="1 1 1" rotation="0 0 0" link="href: future.html;">
+            <a-text value="Future" position="-0.25 1.75 0.05" height="3" width="3" color="white"></a-text>
+          </a-gltf-model> -->
+                    
+          <a-text value="FOREST" position="-4.25 1.7 -5" height="3" width="3" color="white"></a-text>
+          <a-text value="VOLKANO" position="-2.3 1.7 -5" height="3" width="3" color="white"></a-text>
+          <a-text value="ANCIENT" position="-0.3 1.7 -5" height="3" width="3" color="white"></a-text>
+          <a-text value="CITY" position="1.8 1.7 -5" height="3" width="3" color="white"></a-text>
+          <a-text value="SPACE" position="3.75 1.7 -5" height="3" width="3" color="white"></a-text>
+          <!--Mannequin-->
+          <a-gltf-model src="assets/3d-models/man/scene.gltf" position="-2.9 -0.05 -2.5" scale="1 1 1" rotation="0 45 0"  animation-mixer="clip: salute;"></a-gltf-model>         
+    </a-scene>
+  </body>
+</html>
