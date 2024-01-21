@@ -1,0 +1,11 @@
+Model Information:
+* title:	still
+* source:	https://sketchfab.com/3d-models/still-c935b2e8a59f47d1bd85e4ce65e8b356
+* author:	fayjayfay (https://sketchfab.com/fayjayfay)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "still" (https://sketchfab.com/3d-models/still-c935b2e8a59f47d1bd85e4ce65e8b356) by fayjayfay (https://sketchfab.com/fayjayfay) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
